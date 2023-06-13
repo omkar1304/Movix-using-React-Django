@@ -1,0 +1,77 @@
+.profile-page {
+  background-color: rgba(0, 0, 0, 0.637);
+  background-image: url("../../../../src/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-page-header{
+    margin: 0px 15px;
+}
+
+.heading {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: white;
+  text-indent: -2px;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(226, 219, 219);
+}
+
+.payment-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.payment-button > button {
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 10px 40px;
+  color: white;
+  background: var(--gradient);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 830px){
+    .heading {
+        font-size: 4.2rem;
+    }
+    .subheading{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .heading {
+        font-size: 3.5rem;
+    }
+    .subheading{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .payment-button > button {
+        padding: 10px 30px;
+    }
+}

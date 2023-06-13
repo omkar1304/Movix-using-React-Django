@@ -1,0 +1,131 @@
+.login-form {
+  background-color: rgba(0, 0, 0, 0.637);
+  background-image: url("../../../../src/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  border-radius: 15px;
+  background-color: rgba(4, 21, 45, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  margin: 10px auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-icon {
+  color: white;
+  background: var(--gradient);
+  border-radius: 50%;
+  margin-top: 10px;
+  padding: 7px;
+  height: 1.5em !important;
+  width: 1.5em !important;
+}
+
+.heading > p {
+  color: white;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 2px 30px 50px 30px;
+}
+
+.content > input {
+  line-height: 20px;
+  border-radius: 4px;
+  border: none;
+  margin: 5px;
+  text-indent: 10px;
+  color: var(--black3);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.errorhandle {
+  height: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 3px;
+  color: #ff6347;
+  font-size: 12px;
+  margin-top: -8px;
+}
+
+.error-icon {
+  padding: 5px;
+}
+
+.content > button {
+  line-height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 5px 20px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: var(--gradient);
+  cursor: pointer;
+}
+
+.content > button:hover{
+  opacity: 0.9;
+}
+
+.content > a {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 350px;
+    margin: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 300px;
+    margin: 0px 10px;
+  }
+
+  .heading > p {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .content {
+    margin: 2px 25px 40px 25px;
+  }
+
+  .content > input {
+    line-height: 35px;
+  }
+
+  .content > button {
+    line-height: 35px;
+  }
+}
